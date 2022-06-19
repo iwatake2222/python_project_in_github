@@ -16,4 +16,10 @@
 __init__
 """
 
-from calculator.logic import *
+from calculator.logic import add, sub, mul
+
+__all__ = [
+    'add',
+    'sub',
+    'mul',
+]

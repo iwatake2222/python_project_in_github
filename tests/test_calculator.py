@@ -11,15 +11,26 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
+"""
+Test calculator module
+"""
 
 import calculator
 
+
 def test_add():
+    """Test calculator.add
+    """
     assert calculator.add(1, 2) == 3
 
+
 def test_sub():
+    """Test calculator.sub
+    """
     assert calculator.sub(3, 4) == -1
 
+
 def test_mul():
+    """Test calculator.mul
+    """
     assert calculator.mul(5, 6) == 30

@@ -15,6 +15,7 @@
 Logic functinos for calculator
 """
 
+
 def add(lval: int, rval: int) -> int:
     """
     Add values
@@ -35,6 +36,7 @@ def add(lval: int, rval: int) -> int:
     ret = lval + rval
     return ret
 
+
 def sub(lval: int, rval: int) -> int:
     """
     Subtract values
@@ -54,6 +56,7 @@ def sub(lval: int, rval: int) -> int:
 
     ret = lval - rval
     return ret
+
 
 def mul(lval: int, rval: int) -> int:
     """
