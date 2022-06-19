@@ -11,21 +11,27 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+"""
+Main function for calculator
+"""
 
 import argparse
 
 import calculator
 
 def main():
+    """
+    Main function for calculator
+    """
     parser = argparse.ArgumentParser(description='Calculator')
     parser.add_argument('--op', type=str, default='+', help='+, -, x')
     parser.add_argument('--lval', type=str, default='1', help='Left value')
     parser.add_argument('--rval', type=str, default='1', help='Right value')
     args = parser.parse_args()
 
-    a = int(args.lval)
-    b = int(args.rval)
-    ret = calculator.add(a, b)
+    lval = int(args.lval)
+    rval = int(args.rval)
+    ret = calculator.add(lval, rval)
     print(ret)
 
 if __name__ == '__main__':

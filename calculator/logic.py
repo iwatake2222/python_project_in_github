@@ -11,15 +11,66 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+"""
+Logic functinos for calculator
+"""
 
-def add(a: int, b: int) -> int:
-    ret = a + b
+def add(lval: int, rval: int) -> int:
+    """
+    Add values
+
+    Parameters
+    ----------
+    lval : int
+        left value
+    rval : int
+        right value
+
+    Returns
+    -------
+    ret : int
+        lval + rval
+    """
+
+    ret = lval + rval
     return ret
 
-def sub(a: int, b: int) -> int:
-    ret = a - b
+def sub(lval: int, rval: int) -> int:
+    """
+    Subtract values
+
+    Parameters
+    ----------
+    lval : int
+        left value
+    rval : int
+        right value
+
+    Returns
+    -------
+    ret : int
+        lval - rval
+    """
+
+    ret = lval - rval
     return ret
 
-def mul(a: int, b: int) -> int:
-    ret = a * b
+def mul(lval: int, rval: int) -> int:
+    """
+    Multiply values
+
+    Parameters
+    ----------
+    lval : int
+        left value
+    rval : int
+        right value
+
+    Returns
+    -------
+    ret : int
+        lval * rval
+    """
+
+    ret = lval * rval
     return ret
