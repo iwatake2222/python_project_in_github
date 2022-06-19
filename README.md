@@ -16,3 +16,14 @@ python3 -m calculator --op + --lval 6 --rval 4
 python3 -m pytest --doctest-modules  -v --cov=./calculator
 python3 -m pylint ./calculator
 ```
+
+
+```
+pip3 install mkdoc
+pip3 install mkdocs-material
+pip3 install pygments
+
+python3 -m mkdocs new ./
+python3 -m mkdocs build
+python3 -m mkdocs serve
+```
