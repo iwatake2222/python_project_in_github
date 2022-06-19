@@ -39,4 +39,4 @@ jobs:
         pylint ./calculator
     - name: Test with pytest
       run: |
-        pytest -v --cov=./calculator
+        pytest --doctest-modules -v --cov=./calculator
