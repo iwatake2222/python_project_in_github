@@ -39,7 +39,6 @@ def add(lval: int, rval: int) -> int:
     3
     """
 
-
     ret = lval + rval
     return ret
 
