@@ -19,6 +19,7 @@ import argparse
 
 import calculator
 
+
 def main():
     """
     Main function for calculator
@@ -33,6 +34,7 @@ def main():
     rval = int(args.rval)
     ret = calculator.add(lval, rval)
     print(ret)
+
 
 if __name__ == '__main__':
     main()
