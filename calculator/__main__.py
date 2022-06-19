@@ -16,7 +16,7 @@ Main function for calculator
 """
 
 import argparse
-import logic
+import calculator
 
 
 def main():
@@ -31,7 +31,7 @@ def main():
 
     lval = int(args.lval)
     rval = int(args.rval)
-    ret = logic.add(lval, rval)
+    ret = calculator.add(lval, rval)
     print(ret)
 
 
