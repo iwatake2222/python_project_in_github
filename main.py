@@ -11,17 +11,12 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
 """
-__init__
+Entry point
 """
 
-from calculator.calculator import main
-from calculator.logic import add, sub, mul
+from calculator import main
 
-__all__ = [
-    'main',
-    'add',
-    'sub',
-    'mul',
-]
+
+if __name__ == '__main__':
+    main()

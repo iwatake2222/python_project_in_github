@@ -12,27 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """
-Main function for calculator
+Entry point
 """
 
-import argparse
-import calculator
-
-
-def main():
-    """
-    Main function for calculator
-    """
-    parser = argparse.ArgumentParser(description='Calculator')
-    parser.add_argument('--op', type=str, default='+', help='+, -, x')
-    parser.add_argument('--lval', type=str, default='1', help='Left value')
-    parser.add_argument('--rval', type=str, default='1', help='Right value')
-    args = parser.parse_args()
-
-    lval = int(args.lval)
-    rval = int(args.rval)
-    ret = calculator.add(lval, rval)
-    print(ret)
+from . import main
 
 
 if __name__ == '__main__':
