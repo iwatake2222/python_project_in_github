@@ -4,6 +4,10 @@
 [![pages-build-deployment](https://github.com/iwatake2222/python_project_in_github/actions/workflows/pages/pages-build-deployment/badge.svg)](https://iwatake2222.github.io/python_project_in_github)
 
 ```sh
+pip install git+https://github.com/iwatake2222/python_project_in_github
+```
+
+```sh
 ### Install requirements ###
 pip3 install -r requirements.txt
 
