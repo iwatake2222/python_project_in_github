@@ -15,6 +15,10 @@
 Logic functinos for calculator
 """
 
+import calculator.logger_factory
+
+logger = calculator.logger_factory.LoggerFactory.create(__name__)
+
 
 def add(lval: int, rval: int) -> int:
     """
@@ -39,6 +43,7 @@ def add(lval: int, rval: int) -> int:
     3
     """
 
+    logger.debug('call add')
     ret = lval + rval
     return ret
 
@@ -66,6 +71,7 @@ def sub(lval: int, rval: int) -> int:
     -1
     """
 
+    logger.debug('call sub')
     ret = lval - rval
     return ret
 
@@ -93,5 +99,6 @@ def mul(lval: int, rval: int) -> int:
     6
     """
 
+    logger.debug('call mul')
     ret = lval * rval
     return ret

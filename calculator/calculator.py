@@ -16,7 +16,10 @@ Main function for calculator
 """
 
 import argparse
+import calculator.logger_factory
 import calculator.logic
+
+logger = calculator.logger_factory.LoggerFactory.create(__name__)
 
 
 def main():
@@ -29,7 +32,12 @@ def main():
     parser.add_argument('--rval', type=str, default='1', help='Right value')
     args = parser.parse_args()
 
+    logger.info('START')
+    logger.debug('args.op = %s, args.lval = %s, args.rval = %s', args.op, args.lval, args.rval)
+
     lval = int(args.lval)
     rval = int(args.rval)
     ret = calculator.logic.add(lval, rval)
     print(ret)
+
+    logger.info('END')
